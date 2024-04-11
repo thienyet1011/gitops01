@@ -71,7 +71,6 @@ jobs:
           context: ./
           # Note: tags has to be all lower-case
           tags: |
-            hoanglong1011/gitops:${{ github.sha }} 
             ghcr.io/thienyet1011/gitops:${{ github.sha }}
           # build on feature branches, push only on main branch
           push: ${{ github.ref == 'refs/heads/main' }}
